@@ -1,0 +1,216 @@
+
+ *{
+    margin: 0px;/* to make it universal */
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;/* vh-view port height */
+    background-color: white;
+    position: relative;/* ee oru container base ayit venm postion veran e elemt relete ayit venm eni enth vanlum plce avan*/
+
+}
+.navbar{
+    display: flex;/* SIDE BY SIDE */
+    justify-content: space-between; /* two create the space between the two childs */
+    width: 85%;
+    margin-left: 5%;
+    align-items: center;/* vertical conetnets ine center align akan */
+}
+.listitems{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+.links:hover{ /* psudo classes- event occuring property chnage chyan ultha(tag name or class name or id name : psudo name{ property write} */
+    color: blue;
+
+}
+.links{
+    text-decoration: none;/* remove underline */
+    color: black;
+    font-weight: bold;/* bold akan */
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.titleh1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.lastname{
+    color: brown;
+}
+.download{
+    display: inline-block;/* to make the a tag with a specific width and height */
+    text-decoration: none;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;   
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;/* onninte mukil onnayit vern ane */
+    right: 30px;
+    bottom: 0px;
+}
+.images img{
+    position: absolute; /* first image down second on top of it */
+    height: 100%;
+    left: 50%;/* to hower anything ,we had to chane a value so tfor that add a aleft  */
+    bottom: 0px;
+    transform: translateX(-50%);/* to counter the left make it */
+    transition: bottom 1s , left 2s; /* to make it smooth */
+}
+.images:hover #shape{
+    bottom: 60px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+ 
+#about{
+    margin: 18% 8% 0px 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: rgb(90, 105, 100);
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.about-details p{
+    font-size: 20px;
+    text-align: justify;/* same line starting and ending */
+}
+.information{
+    margin-top: 2rem;
+}
+.infobox{
+    display: flex; /* side by side */
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.infobox span{
+    margin-left: 20px;
+}
+#skill{
+    margin: 18% 8% 0px 8%;
+}
+
+.heading h3{
+    font-size: 30px;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);/* 2 colum with each 1 frame length */
+    gap: 2rem;
+    margin-top: 5rem;
+    
+}
+.skill-image img{
+    width: 90%;
+    padding-left: 4rem;
+}
+.bar-coonatiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;/* for parent */
+}
+.base-bar{
+   
+    width: 100%;
+    height: 1rem;
+    background-color: black;
+    position: absolute; /* for  child */
+    bottom: 0px;
+    left: 0%;
+    border-radius:21px;
+}
+.html-bar{
+    
+    background-color: rgb(221, 91, 91);
+    width: 95%;
+    
+}
+.css-bar{
+    background-color: rgb(221, 91, 91);
+    width: 90%;
+}
+.js-bar{
+    background-color: rgb(221, 91, 91);
+    width: 80% ;
+}
+.node-bar{
+    background-color: rgb(221, 91, 91);
+    width: 85%;
+}
+#contact{
+    margin: 18% 8% 0px 8%;
+
+}
+.icon-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon,.uparrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;/* flexibilty */
+    justify-content: center; /* horizontal center */
+    align-items: center; /* verticall center */
+    margin: 0px 10px 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,orange);
+
+}
+.icon:hover i{
+    color: aliceblue;
+    animation: shake .85s ;/* any random name + time in s */
+}
+
+@keyframes shake{
+    10%{ transform: rotate(15deg);}
+    20%{ transform: rotate(-15deg);}
+    30%{ transform: rotate(15deg);}
+    40%{ transform: rotate(-15deg);}
+}
+.footer{
+    margin-top: 50px;
+}
+.uparrow{
+    float: right;
+    margin: 0px 10px 50px 0px;
+    background-image: linear-gradient(to bottom right,yellow,orange);
+}
+html{
+    scroll-behavior: smooth; /* scroll behaour  */
+}
